@@ -1,0 +1,17 @@
+K 10
+svn:ignore
+V 135
+.vs
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
+Library
+Logs
+Packages
+Temp
+ios_AdSDK.sln
+obj
+IOS_SDK_Sample.sln
+output
+Output
+
+END

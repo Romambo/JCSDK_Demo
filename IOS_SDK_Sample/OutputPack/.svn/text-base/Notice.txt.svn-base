@@ -1,0 +1,18 @@
+Notice:
+
+JCiOSSDK_20201103.unitypackage
+  -- 已经实际使用多次，应该比较稳定，Unity版本为2019.2.X
+
+JCiOSSDK_20201119.unitypackage
+  -- 为兼容2019.2.X 2019.3.X 2019.4.X，添加了Product Name与IDFA提示的本地化
+
+JCiOSSDK_20201124.unitypackage
+  -- 与上版本基础功能一致，可手工指定SDK路径，同时允许使用旧的默认路径方式
+
+JCiOSSDK_20201203.unitypackage
+  -- 与上版本基础功能一致，加宏以避免Android下打包报错，
+  -- 因为需要FaceBook,添加了AudioToolbox.framework的引用，InfoPlist中添加了FaceBook的SKAdNetworkItems
+  -- 修改了NSUserTrackingUsageDescription描述
+
+//已经删除的版本：
+JCiOSSDK_20201110.unitypackage -- 为兼容2019.2.X 2019.3.X 2019.4.X，做了较多修改，未经测试，新项目慎用
