@@ -6,20 +6,20 @@ using UnityEngine;
 namespace JCiOSSDK
 {
     //--------------------------------------------------
-    //----------此文件为IOS Bridge 调用、使用文件----------
+    //----------This file is called and used by IOS Bridge----------
     //--------------------------------------------------
 
     public partial class IOSBridge
     {
         /// <summary>
-        /// Banner最后的显示状态
-        /// 如果ShowBanner时Banner未加载好，保留此状态
-        /// 在回调加载成功时，依据此状态来决定是否显示
+        /// The final display status of the Banner
+        /// If the banner is not loaded during ShowBanner, keep this state
+        /// When the callback is successfully loaded, determine whether to display according to this status
         /// </summary>
         private static bool BannerLastState;
 
         /// <summary>
-        /// 插屏播放时间间隔
+        /// Interstitial playback time interval
         /// </summary>
         public static int InterShowPacing
         {
@@ -30,7 +30,7 @@ namespace JCiOSSDK
         }
 
         /// <summary>
-        /// 插屏-->是否可用
+        /// Intersitial-->it's usable or not
         /// </summary>
         public static bool IsIntersitialReady()
         {
@@ -42,7 +42,7 @@ namespace JCiOSSDK
         }
 
         /// <summary>
-        /// 插屏-->调用显示
+        /// Intersitial-->show
         /// </summary>
         public static void ShowIntersitial()
         {
@@ -50,7 +50,7 @@ namespace JCiOSSDK
         }
 
         /// <summary>
-        /// 插屏-->如可用则调用显示，同时返回可用状态
+        /// Intersitial-->Call the display if available, and return to the available state at the same time
         /// </summary>
         public static bool TryShowIntersitial()
         {
@@ -64,7 +64,7 @@ namespace JCiOSSDK
         }
 
         /// <summary>
-        /// 激励视频-->是否可用
+        /// rewardVideo-->it's usable or not
         /// </summary>
         public static bool IsRewardVideoReady()
         {
@@ -76,7 +76,7 @@ namespace JCiOSSDK
         }
 
         /// <summary>
-        /// 激励视频-->调用显示
+        /// rewardVideo-->show
         /// </summary>
         public static void ShowRewardVideo()
         {
@@ -84,7 +84,7 @@ namespace JCiOSSDK
         }
 
         /// <summary>
-        /// 激励视频-->如可用则调用显示，同时返回可用状态
+        /// rewardVideo-->Call the display if available, and return to the available state at the same time
         /// </summary>
         public static bool TryShowRewardVideo()
         {
@@ -98,7 +98,7 @@ namespace JCiOSSDK
         }
 
         /// <summary>
-        /// Banner->调用显示
+        /// Banner->show
         /// </summary>
         public static void ShowBanner()
         {
@@ -115,7 +115,7 @@ namespace JCiOSSDK
         }
 
         /// <summary>
-        /// Banner->移除
+        /// Banner->remove
         /// </summary>
         public static void RemoveBanner()
         {
@@ -124,7 +124,7 @@ namespace JCiOSSDK
         }
 
         /// <summary>
-        /// 发送埋点数据
+        /// Send buried point data
         /// </summary>
         public static void SendEvent(string eventName)
         {
@@ -132,7 +132,7 @@ namespace JCiOSSDK
         }
 
         /// <summary>
-        /// 发送埋点数据
+        /// Send buried point data
         /// </summary>
         public static void SendEvent(string eventName, Dictionary<string, string> eventData)
         {
